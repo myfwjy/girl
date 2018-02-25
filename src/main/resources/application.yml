@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      # create 每次都创建一个新的表，舍弃旧的
+      # create-drop 运行时创建，结束时删除
+      # update 初次创建表，否则只更新
+      ddl-auto: update
+    # 输出sql语句
+    show-sql: true
