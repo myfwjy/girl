@@ -1,4 +1,4 @@
-package com.imooc.girl;
+package com.imooc.girl.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
